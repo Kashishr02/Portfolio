@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slidebar">
+            <nav>
+                <a href="#homeSec" id="home" onclick="home()">Home</a>
+                <a href="#aboutSec" id="about" onclick="about()">About</a>
+                <a href="#serviceSec" id="services" onclick="service()">Services</a>
+                <a href="#skillSec" id="skills" onclick="skill()">Skills</a>
+                <a href="#contactSec" id="contact" onclick="contact()">Contact</a>
+            </nav>
+        </div>
+
+        <!--home section-->
+        <div id="homeSec">
+            <div class="intro">
+                <img src="images/cap1.jpeg" alt="kashish rawat">
+                <div class="hello">Hello, It's Me</div>
+                <div class="name">Kashish Rawat</div>
+                <div class="front">And I'm a Front End Developer</div>
+                <p class="he">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo aut obcaecati perspiciatis molestiae asperiores dicta, autem dolores consequuntur nisi!</p>
+                <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <button class="cv">Download CV</button>
+                <button class="contactBtn">Contact Me</button>
+            </div>
+
+        </div>
+        <!--about section-->
+        <div id="aboutSec">
+            <div class="aboutMe">
+                <img src="images/cap1.jpeg" alt="kashish rawat">
+                <div class="about-head">About Me</div>
+                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus natus rem provident exercitationem nulla voluptatum facilis aut delectus odio doloremque nemo possimus laboriosam quos libero aliquid ad incidunt voluptates commodi,
+                    tempore minima nam dolore! Explicabo maiores reiciendis doloribus nemo, ullam hic suscipit dolor, sint incidunt vero rem distinctio voluptatem. Alias.
+                </p><br>
+                <div id="more-cont">
+                    <div class="more-detail">
+                        <div class="more-skill">
+                            <div style="font-size: 24px;cursor: pointer;color: dodgerblue;" id="more-skillBtn" onclick="moreSkill()">Skills</div><br>
+                            <div id="more-skill-detail">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JAVASCRIPT</li>
+                                    <li>PHP</li>
+                                    <li>REACT</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="more-edu">
+                            <div style="font-size: 24px;cursor: pointer;" id="more-eduBtn" onclick="moreEdu()">Education</div><br>
+                            <div id="more-edu-detail">
+                                <dl>
+                                    <dt>IIMT UNIVERSITY</dt>
+                                    <dd>- BCA [2021-2024]</dd><br>
+                                    <dt>BBSSM INTER COLLEGE</dt>
+                                    <dd>- XII [2020-2021]</dd><br>
+                                    <dt>BBSSM INTER COLLEGE</dt>
+                                    <dd>- X [2018-2019]</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="more-exp">
+                            <div style="font-size: 24px;cursor: pointer;" id="more-expBtn" onclick="moreExp()">Experience</div><br>
+                            <div id="more-exp-detail">
+                                <ul>
+                                    <li>Virtual internship in IBM</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--just example for now it will improvise later-->
+                <button id="readBtn" onclick="readmore()">Read More</button>
+            </div>
+        </div>
+        <!--service section-->
+        <div id="serviceSec">
+            <div style="font-size: 75px; text-align: center; margin-bottom: 20px;">Our Services</div>
+            <div class="service-card">
+                <div class="card-1">
+                    <div><i class="fas fa-code" style="font-size: 24px;margin-bottom: 5px;"></i></div>
+                    <div style="font-size: 35px;margin-bottom: 10px;">Web Design</div>
+                    <p style="font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dolores ullam mollitia et qui praesentium officia nisi voluptate ex aut?
+                    </p>
+                    <button class="learn">Learn More</button>
+                </div>
+                <div class="card-2">
+                    <div><i class="fas fa-pen" style="font-size: 24px;margin-bottom: 5px;"></i></div>
+                    <div style="font-size: 35px;margin-bottom: 10px;">UI/UX Design</div>
+                    <p style="font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dolores ullam mollitia et qui praesentium officia nisi voluptate ex aut?
+                    </p>
+                    <button class="learn">Learn More</button>
+                </div>
+                <div class="card-3">
+                    <div><i class="fab fa-apple" style="font-size: 24px;margin-bottom: 5px;"></i></div>
+                    <div style="font-size: 35px;margin-bottom: 10px;">App Design</div>
+                    <p style="font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dolores ullam mollitia et qui praesentium officia nisi voluptate ex aut?
+                    </p>
+                    <button class="learn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!--skills section-->
+        <div id="skillSec">
+            <div style="font-size: 75px; text-align: center; margin-bottom: 20px;">My Skills</div>
+            <div class="skill-cont">
+                <div class="tech-skill">
+                    <div style="font-size: 45px;text-align: center;">Technical Skills</div>
+                    <div>HTML <span style="float: right;">90%</span></div>
+                    <div class="html">
+                        <div class="html-range">90%</div>
+                    </div><br>
+                    <div>CSS <span style="float: right;">80%</span></div>
+                    <div class="css">
+                        <div class="css-range">80%</div>
+                    </div><br>
+                    <div>JAVASCRIPT <span style="float: right;">85%</span></div>
+                    <div class="js">
+                        <div class="js-range">85%</div>
+                    </div><br>
+                    <div>PHP <span style="float: right;">65%</span></div>
+                    <div class="php">
+                        <div class="php-range">65%</div>
+                    </div><br>
+                    <div>REACT <span style="float: right;">70%</span></div>
+                    <div class="react">
+                        <div class="react-range">70%</div>
+                    </div>
+                </div>
+                <div class="prof-skill">
+                    <div style="font-size: 45px;text-align: center;">Professional Skills</div>
+                    <div class="prof-div-1">
+                        <div class="creative">
+                            <div class="creative-range">90%</div>
+                            <div style="font-size: 20px;text-align: center;">Creativity</div>
+                        </div>
+                        <div class="commu">
+                            <div class="commu-range">65%</div>
+                            <div style="font-size: 20px;text-align: center;">Communication</div>
+                        </div>
+                    </div>
+                    <div class="prof-div-2">
+                        <div class="solving">
+                            <div class="solving-range">75%</div>
+                            <div style="font-size: 20px;text-align: center;">Problem Solving</div>
+                        </div>
+                        <div class="teamwork">
+                            <div class="teamwork-range">85%</div>
+                            <div style="font-size: 20px;text-align: center;">Team Work</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--contact section-->
+        <div id="contactSec">
+            <div style="font-size: 75px; text-align: center; margin-bottom: 20px;">Contact Info</div>
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <div style="font-size: 45px;margin: 10px;">Contact Me</div>
+                    <div style="font-size: 30px; margin: 8px;">Let's Work Together</div>
+                    <p style="font-size: 20px;margin: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laborum quod, dicta aliquam quis molestiae ipsam facere beatae velit temporibus.</p>
+                    <div style="font-size: 20px;"><i class="fas fa-paper-plane" style="margin: 10px;"></i>dssarita123@gmail.com</div>
+                    <div style="font-size: 20px;"><i class="fas fa-phone" style="margin: 10px;"></i>+91-91190-86711</div>
+                    <div class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Full Name :">
+                        <input type="email" placeholder="Email :"><br>
+                        <input type="tel" placeholder="Phone :">
+                        <input type="text" placeholder="Email Subject :"><br>
+                        <textarea placeholder="Enter Your Message Here :" rows="6"></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
