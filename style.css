@@ -211,6 +211,7 @@ p.about-content {
 #serviceSec {
     margin: 20px;
     padding: 25px;
+    display: flex;
 }
 
 .service-card {
@@ -482,4 +483,10 @@ button {
 
 i {
     cursor: pointer;
+}
+@media screen and (max-width : 750px){
+    #serviceSec{
+        display: flex;
+        flex-direction: column;
+    }
 }
