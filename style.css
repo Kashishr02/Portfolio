@@ -489,6 +489,8 @@ i {
     .service-card {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }.skill-cont {
         display: flex;
         flex-direction: column;
@@ -507,51 +509,6 @@ i {
     }
 }
 
-@media screen and (max-width:750px) {
-    .slidebar nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-}.skill-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .tech-skill {
-        width: 100%;
-    }
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-detail {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:750px) {
-    .slidebar nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }  .skill-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    } .tech-skill {
-        width: 100%;
-    }
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-detail {
-        width: 100%;
-    }
-}
 @media screen and (max-width:750px) {
     .slidebar nav {
         display: flex;
