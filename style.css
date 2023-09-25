@@ -9,7 +9,9 @@ body {
     background-color: #212121;
     color: white;
 }
-
+.slidebar nav{
+    dispay: flex;
+}
 .slidebar {
     position: fixed;
     z-index: 99;
@@ -211,8 +213,7 @@ p.about-content {
 #serviceSec {
     margin: 20px;
     padding: 25px;
-    display: flex;
-}
+   }
 
 .service-card {
     display: flex;
@@ -484,9 +485,78 @@ button {
 i {
     cursor: pointer;
 }
-@media screen and (max-width : 750px){
-    #serviceSec{
+@media screen and (max-width : 920px){
+    .service-card {
+        display: flex;
+        flex-direction: column;
+    }.skill-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .tech-skill {
+        width: 100%;
+    }
+    .contact-info {
         display: flex;
         flex-direction: column;
     }
+    .contact-detail {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width:750px) {
+    .slidebar nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}.skill-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .tech-skill {
+        width: 100%;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-detail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .slidebar nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }  .skill-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    } .tech-skill {
+        width: 100%;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-detail {
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px) {
+    .slidebar nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
