@@ -9,10 +9,15 @@ body {
     background-color: #212121;
     color: white;
 }
-.slidebar nav{
-    dispay: flex;
+
+.slidebar nav {
+    display: flex;
 }
+
 .slidebar {
+    margin-top: 0px;
+    width: 100%;
+    background-color: #212121;
     position: fixed;
     z-index: 99;
 }
@@ -213,7 +218,13 @@ p.about-content {
 #serviceSec {
     margin: 20px;
     padding: 25px;
-   }
+}
+
+.service-head {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .service-card {
     display: flex;
@@ -270,6 +281,18 @@ p.about-content {
 #skillSec {
     margin: 20px;
     padding: 25px;
+}
+
+.skill-head {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#prof-head,
+#tech-head {
+    font-size: 45px;
+    text-align: center;
 }
 
 .skill-cont {
@@ -415,6 +438,12 @@ p.about-content {
     padding: 25px;
 }
 
+.contact-head {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .contact-info {
     display: flex;
 }
@@ -485,13 +514,15 @@ button {
 i {
     cursor: pointer;
 }
-@media screen and (max-width : 920px){
+
+@media screen and (max-width:920px) {
     .service-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-    }.skill-cont {
+    }
+    .skill-cont {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -507,6 +538,10 @@ i {
     .contact-detail {
         width: 100%;
     }
+    .intro img,
+    .aboutMe img {
+        width: 320px;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -515,5 +550,64 @@ i {
         flex-direction: column;
         text-align: center;
     }
+    .slidebar {
+        position: sticky;
+    }
+    .intro img,
+    .aboutMe img {
+        width: 240px;
+    }
+    .hello,
+    .about-head,
+    .service-head,
+    .skill-head,
+    .contact-head {
+        font-size: 65px;
+    }
+    .name,
+    #prof-head,
+    #tech-head {
+        font-size: 35px;
+    }
+    .front {
+        font-size: 24px;
+    }
+    p.he,
+    .about-content {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .social i {
+        font-size: 14px;
+    }
 }
 
+@media screen and (max-width:320px) {
+    .intro img,
+    .aboutMe img {
+        width: 120px;
+    }
+    .hello,
+    .about-head,
+    .service-head,
+    .skill-head,
+    .contact-head {
+        font-size: 45px;
+    }
+    .name,
+    #prof-head,
+    #tech-head {
+        font-size: 24px;
+    }
+    .front {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    p.he {
+        font-size: 16px;
+    }
+}
